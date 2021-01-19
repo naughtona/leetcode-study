@@ -68,3 +68,9 @@ class Codec:
         #     vals = iter(data.split())
         #     root = preorder_decode()
         #     return root
+
+# >>> from serialize_and_deserialize_binary_tree import Codec 
+# >>> input = '[1,2,3,null,null,4,5,6,7,null,null,null,null,null,null]'
+# >>> root = Codec().deserialize(input)
+# >>> Codec().serialize(root)
+# '[1,2,3,null,null,4,5,6,7,null,null,null,null,null,null]'
