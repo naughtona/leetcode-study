@@ -9,7 +9,7 @@ class Tree:
     def buildTree(self, data, index):
         node = None
         if index < len(data):
-            if data[index] == None:
+            if data[index] is None:
                 return
             node = TreeNode(data[index])
             node.left = self.buildTree(data, 2 * index + 1)
@@ -22,6 +22,9 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+    
+    def __repr__(self):
+        return 'TreeNode({})'.format((self.val,self.left,self.right))
 
 class TreeOps:
     def printTree(self, root):

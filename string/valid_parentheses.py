@@ -11,13 +11,10 @@ class Solution:
         for p in filtered_s:
             if p in d:
                 stack.append(d[p])
-            elif stack and p == stack[-1]:
-                stack.pop(-1)
-                n -= 2
-            else:
+            elif not stack or p != stack.pop():
                 return False
 
-        return n==0
+        return not stack
         
 # >>> from valid_parentheses import Solution
 # >>> Solution().isValid("()")

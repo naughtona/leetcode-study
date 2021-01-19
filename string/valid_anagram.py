@@ -9,7 +9,7 @@ class Solution:
             missing -= 1
             need[c] -= 1
             
-        return False if missing else True
+        return missing==0
 
 # >>> from valid_anagram import Solution
 # >>> Solution().isAnagram("anagram","nagaram")
