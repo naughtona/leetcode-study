@@ -7,15 +7,15 @@ A place to put my solutions to the [top 75 Leetcode questions](https://www.teamb
 | :-:              | :-:       |  :-:      | :-:    |
 Array | 10 | 0 | :heavy_check_mark:
 Binary | 0 | 5 | :x:
-Dynamic Programming | 0 | 11 | :x:
-Graph | 0 | 5 | :x:
+Dynamic Programming | 4 | 7 | :construction:
+Graph | 1 | 4 | :x:
 Interval | 0 | 3 | :x:
-Linked List | 0 | 6 | :x:
+Linked List | 1 | 5 | :construction:
 Matrix | 4 | 0 | :heavy_check_mark:
 String | 9 | 0 | :heavy_check_mark:
-Tree | 5 | 9 | :construction:
+Tree | 6 | 8 | :construction:
 Heap | 1 | 2 | :construction:
-**Total** | **29** | **31** | :runner:
+**Total** | **36** | **24** | :runner:
   
 ## Note
 You may have noticed that the above list has 70 questions instead of 75. The missing 5 questions require LeetCode Premium. :cry:
