@@ -9,7 +9,7 @@ class Solution:
         left = [[si,ei] for si,ei in intervals if ei < s] # ends before we start
         right = [[si,ei] for si,ei in intervals if si > e] # starts after we end
         
-        # have a new interval?
+        # merging intervals?
         if left + right != intervals:
             s = min(s, intervals[len(left)][0])
             e = max(e, intervals[-len(right)-1][1])
