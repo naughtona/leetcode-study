@@ -1,6 +1,6 @@
 import numpy as np
 
-def avgTravelTime(location, location2, timetableEntries):
+def avg_travel_time(location, location2, timetableEntries):
     distances = []
     
     for start_loc, start_date, arr_loc, arr_date in timetableEntries:
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     n = int(input())
     m = int(input())
     timetable = [input().split() for _ in range(n)]
-    print(avgTravelTime(loc, loc2, timetable))
+    print(avg_travel_time(loc, loc2, timetable))
 
 
 #------------------EXAMPLE 1 INPUT------------------#
