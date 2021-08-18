@@ -7,6 +7,8 @@ from collections import defaultdict
     Besides the start location, route can take any order and does not need to finish at J.
     Return an array of strings, representing the order in which the islands \
     should be visited to achieve the optimum route (starting with A).
+    
+    https://www.baeldung.com/cs/shortest-path-visiting-all-nodes
 """
 
 def find_optimum_route(timetableEntries):
