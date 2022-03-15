@@ -1,13 +1,24 @@
 from typing import List
-from collections import Counter
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        d = defaultdict(list)
-        for s in sorted(strs):
-            key = tuple(sorted(s))
-            d[key] += [s]
-        return d.values()
+        # anagrams = {}
+        # for cand in strs:
+        #     key = tuple(sorted(cand))
+        #     anagrams[key] = anagrams.get(key, []) + [cand]
+        # return anagrams.values()
+        
+        anagrams = {}
+        for cand in strs:
+            key = self.hash(cand)
+            anagrams[key] = anagrams.get(key, []) + [cand]
+        return anagrams.values()
+    
+    def hash(self, word: str) -> tuple:
+        out = [0]*26
+        for char in word:
+            out[ord(char)-ord('a')] += 1
+        return tuple(out)
 
 # >>> from group_anagrams import Solution
 # >>> Solution().groupAnagrams(["eat","tea","tan","ate","nat","bat"])
